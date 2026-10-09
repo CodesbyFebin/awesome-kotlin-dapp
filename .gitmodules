@@ -73,3 +73,7 @@
 [submodule "upstream/google-developer-training/basic-android-kotlin-compose-training-unscramble"]
 	path = upstream/google-developer-training/basic-android-kotlin-compose-training-unscramble
 	url = https://github.com/google-developer-training/basic-android-kotlin-compose-training-unscramble.git
+
+[submodule "upstream/WithAutonomi/self_encryption"]
+	path = upstream/WithAutonomi/self_encryption
+	url = https://github.com/WithAutonomi/self_encryption.git

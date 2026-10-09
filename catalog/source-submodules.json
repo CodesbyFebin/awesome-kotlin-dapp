@@ -173,6 +173,15 @@
       "license": "Apache-2.0",
       "license_path": "LICENSE",
       "license_blob_sha": "4c9ad980682246bd6ab0d2bae82232be6dbdcbd4"
+    },
+    {
+      "repository": "WithAutonomi/self_encryption",
+      "path": "upstream/WithAutonomi/self_encryption",
+      "url": "https://github.com/WithAutonomi/self_encryption.git",
+      "commit": "eb95108a6eb8f1012ff2499c1cbb830aed8392a8",
+      "license": "MIT OR Apache-2.0",
+      "license_path": "LICENSE-APACHE",
+      "license_blob_sha": "72edcf074d56ea1524528e64bfbb78622bf34eac"
     }
   ],
   "reference_only": [
@@ -193,6 +202,7 @@
     "philipplackner/KotlinFlowsGuide",
     "philipplackner/WorkManagerGuide",
     "philipplackner/AndroidCrypto",
-    "philipplackner/BiometricAuth"
+    "philipplackner/BiometricAuth",
+    "nickjvandyke/Sia-Android"
   ]
 }

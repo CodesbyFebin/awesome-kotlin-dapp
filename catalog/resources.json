@@ -531,6 +531,34 @@
       "build_state": "NOT_RUN",
       "role": "BiometricPromptManager example; biometric success is not wallet authorization.",
       "license_note": "No license identified in metadata; inspect upstream terms before reuse"
+    },
+    {
+      "repository": "WithAutonomi/self_encryption",
+      "url": "https://github.com/WithAutonomi/self_encryption",
+      "description": "Rust content encryption and chunking; storage transport is separate",
+      "default_branch": "master",
+      "archived": false,
+      "license": "MIT OR Apache-2.0",
+      "checked_at": "2026-10-09",
+      "commit": "eb95108a6eb8f1012ff2499c1cbb830aed8392a8",
+      "category": "Storage and AI examples",
+      "role": "Optional Rust encryption/chunking backend; Android JNI and storage provider integration NOT_RUN.",
+      "source_state": "metadata_commit_license_and_api_inspected",
+      "build_state": "NOT_RUN"
+    },
+    {
+      "repository": "nickjvandyke/Sia-Android",
+      "url": "https://github.com/nickjvandyke/Sia-Android",
+      "description": "Independent Sia Android client; redistribution restricted",
+      "default_branch": "develop",
+      "archived": false,
+      "license": "LicenseRef-All-Rights-Reserved",
+      "checked_at": "2026-10-09",
+      "commit": "797422781cf3b4d523db8b8f4af6f88e1b6b919c",
+      "category": "Restricted storage references",
+      "role": "View-only architecture reference; do not copy or adapt source without author permission.",
+      "source_state": "metadata_commit_license_and_build_file_inspected",
+      "build_state": "NOT_RUN"
     }
   ]
 }

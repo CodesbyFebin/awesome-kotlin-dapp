@@ -6,7 +6,7 @@
 
 A curated list of tools, SDKs, frameworks and tutorials for building decentralized apps (dApps) with Kotlin — smart contracts, Web3 clients, wallets, IPFS, KMP/CMP targets, testing and starter-kit references.
 
-This repository is an agent-readable resource catalog and workspace bootstrap with 19 pinned, license-verified upstream Git submodules. It does not contain a finished full-stack app or certify upstream projects as production-ready. The previously assembled 200+ repository source archive is a separate artifact; it is not present in this GitHub checkout.
+This repository is an agent-readable resource catalog and workspace bootstrap with 20 pinned, license-verified upstream Git submodules. It does not contain a finished full-stack app or certify upstream projects as production-ready. The previously assembled 200+ repository source archive is a separate artifact; it is not present in this GitHub checkout.
 
 ## Pull the licensed source workspace
 
@@ -15,7 +15,7 @@ git clone --recurse-submodules https://github.com/CodesbyFebin/awesome-kotlin-da
 cd awesome-kotlin-dapp
 ```
 
-See [source workspace](docs/SOURCE-WORKSPACE.md) and [source manifest](catalog/source-submodules.json). Submodules preserve source history and licenses; they are not flattened copies or an integrated app. The other 18 resources remain catalog references only.
+See [source workspace](docs/SOURCE-WORKSPACE.md) and [source manifest](catalog/source-submodules.json). Submodules preserve source history and licenses; they are not flattened copies or an integrated app. The other 19 resources remain catalog references only.
 
 ## Start with one prompt
 
@@ -26,7 +26,7 @@ python3 scripts/check-catalog.py
 python3 scripts/fetch-workspace.py --profile solana-android
 ```
 
-The last command clones selected upstream sources into `workspace/sources/` at the commits in [catalog/resources.json](catalog/resources.json). It preserves each repository separately, writes a provenance manifest, and does not build, execute or merge upstream code. Use `--profile full-reference` for all 37 references, including archived and privileged-platform studies; these are not one compatible dependency graph.
+The last command clones selected upstream sources into `workspace/sources/` at the commits in [catalog/resources.json](catalog/resources.json). It preserves each repository separately, writes a provenance manifest, and does not build, execute or merge upstream code. Use `--profile full-reference` for all 39 references, including archived and privileged-platform studies; these are not one compatible dependency graph.
 
 Give your coding agent this instruction:
 
@@ -49,7 +49,7 @@ See [Agent quickstart](docs/AGENT-QUICKSTART.md), [build prompt](docs/MASTER-BUI
 
 ## Catalog
 
-37 repository identities and current default-branch commits were checked on 2026-10-09. Compilation, audits and device qualification of these sources were NOT_RUN in this catalog update. GitHub license metadata is informational; inspect actual LICENSE/NOTICE files before copying or distributing code.
+39 repository identities and current default-branch commits were checked on 2026-10-09. Compilation, audits and device qualification of these sources were NOT_RUN in this catalog update. GitHub license metadata is informational; inspect actual LICENSE/NOTICE files before copying or distributing code.
 
 ### Android and Kotlin
 
@@ -132,6 +132,15 @@ python3 scripts/fetch-workspace.py --profile kotlin-learning --list
 ```
 
 Remove `--list` to fetch the 12 pinned references for inspection. This does not build or integrate them and does not grant a redistribution license.
+
+### Storage encryption and restricted references
+
+| Resource | Role | Boundary |
+|---|---|---|
+| [WithAutonomi/self_encryption](https://github.com/WithAutonomi/self_encryption) | Rust encryption/chunking, optional Android NDK experiment | MIT OR Apache-2.0; JNI, uploads and provider payments not integrated |
+| [nickjvandyke/Sia-Android](https://github.com/nickjvandyke/Sia-Android) | Sia Android architecture reference | Author restricts redistribution/modification; source is not imported |
+
+Read [EdgeORE storage integration assessment](docs/EDGEORE-STORAGE.md). Existing EdgeORE local storage remains unchanged; no new storage functionality is claimed.
 
 ## Official learning sources
 
