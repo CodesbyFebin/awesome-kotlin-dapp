@@ -13,11 +13,13 @@ CORE = {
 }
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--profile", choices=["solana-android", "full-reference"], default="solana-android")
+    parser.add_argument("--profile", choices=["solana-android", "kotlin-learning", "full-reference"], default="solana-android")
     parser.add_argument("--list", action="store_true", help="Show selections without cloning")
     args = parser.parse_args()
     rows = json.loads((ROOT / "catalog/resources.json").read_text())["resources"]
-    rows = [r for r in rows if args.profile == "full-reference" or r["repository"] in CORE]
+    rows = [r for r in rows if args.profile == "full-reference"\
+            or (args.profile == "solana-android" and r["repository"] in CORE)\
+            or (args.profile == "kotlin-learning" and r["repository"].startswith("philipplackner/"))]
     base = ROOT / "workspace/sources"
     targets = []
     for row in rows:

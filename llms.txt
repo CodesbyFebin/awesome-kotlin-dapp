@@ -11,5 +11,7 @@
 - [FAQ](https://github.com/CodesbyFebin/awesome-kotlin-dapp/blob/main/docs/FAQ.md): platform and readiness boundaries.
 - [Credits](https://github.com/CodesbyFebin/awesome-kotlin-dapp/blob/main/CREDITS.md): upstream ownership.
 
+- [Philipp Lackner learning references](https://github.com/CodesbyFebin/awesome-kotlin-dapp/blob/main/README.md#philipp-lackner-learning-references): 12 pinned Android/Kotlin tutorials; builds NOT_RUN and licenses unresolved.
+
 ## Constraints
 Kotlin clients are distinct from on-chain programs. Wallet keys stay with wallets. No build, audit, device or production PASS is implied by inclusion. Archived and privileged-platform resources are optional references.

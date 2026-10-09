@@ -15,7 +15,7 @@ python3 scripts/check-catalog.py
 python3 scripts/fetch-workspace.py --profile solana-android
 ```
 
-The last command clones selected upstream sources into `workspace/sources/` at the commits in [catalog/resources.json](catalog/resources.json). It preserves each repository separately, writes a provenance manifest, and does not build, execute or merge upstream code. Use `--profile full-reference` for all 25 references, including archived and privileged-platform studies; these are not one compatible dependency graph.
+The last command clones selected upstream sources into `workspace/sources/` at the commits in [catalog/resources.json](catalog/resources.json). It preserves each repository separately, writes a provenance manifest, and does not build, execute or merge upstream code. Use `--profile full-reference` for all 37 references, including archived and privileged-platform studies; these are not one compatible dependency graph.
 
 Give your coding agent this instruction:
 
@@ -38,7 +38,7 @@ See [Agent quickstart](docs/AGENT-QUICKSTART.md), [build prompt](docs/MASTER-BUI
 
 ## Catalog
 
-25 repository identities and current default-branch commits were checked on 2026-10-09. Compilation, audits and device qualification of these sources were NOT_RUN in this catalog update. GitHub license metadata is informational; inspect actual LICENSE/NOTICE files before copying or distributing code.
+37 repository identities and current default-branch commits were checked on 2026-10-09. Compilation, audits and device qualification of these sources were NOT_RUN in this catalog update. GitHub license metadata is informational; inspect actual LICENSE/NOTICE files before copying or distributing code.
 
 ### Android and Kotlin
 
@@ -94,6 +94,33 @@ See [Agent quickstart](docs/AGENT-QUICKSTART.md), [build prompt](docs/MASTER-BUI
 |---|---|---|
 | [android/android-ktx](https://github.com/android/android-ktx) | Archived standalone repository; use current AndroidX documentation for new work. | Archived reference |
 | [android/kotlin-guides](https://github.com/android/kotlin-guides) | Archived Kotlin guidance; consult current Android documentation. | Archived reference |
+
+### Philipp Lackner learning references
+
+[Philipp Lackner](https://github.com/philipplackner) provides Android and Kotlin tutorial repositories. These are learning references, not Web3 SDKs or qualified production templates. Several default branches are lesson starters; inspect available branches rather than treating a repository title as evidence of a complete implementation. No license was identified in GitHub metadata for these entries; verify upstream permissions before copying or distributing source.
+
+| Resource | Use | Qualification |
+|---|---|---|
+| [philipplackner/CleanArchitectureNoteApp](https://github.com/philipplackner/CleanArchitectureNoteApp) | Clean architecture tutorial scaffold; inspect lesson branches for the completed implementation. | Build NOT_RUN; license unresolved |
+| [philipplackner/CMP-Bookpedia](https://github.com/philipplackner/CMP-Bookpedia) | Compose Multiplatform book app architecture and database reference. | Build NOT_RUN; license unresolved |
+| [philipplackner/CMP-Ktor](https://github.com/philipplackner/CMP-Ktor) | Compose Multiplatform HTTP client and typed-error example. | Build NOT_RUN; license unresolved |
+| [philipplackner/KtorJwtAuth](https://github.com/philipplackner/KtorJwtAuth) | Ktor JWT backend tutorial with authentication routes; not an audited auth service. | Build NOT_RUN; license unresolved |
+| [philipplackner/JWTAuthKtorAndroid](https://github.com/philipplackner/JWTAuthKtorAndroid) | Android authentication client tutorial; default branch contains UI scaffolding. | Build NOT_RUN; license unresolved |
+| [philipplackner/ShoppingListTestingYT](https://github.com/philipplackner/ShoppingListTestingYT) | Shopping-list testing tutorial scaffold; inspect course branches before reuse. | Build NOT_RUN; license unresolved |
+| [philipplackner/TestingCourse](https://github.com/philipplackner/TestingCourse) | Testing course scaffold; tutorial title does not certify comprehensive tests. | Build NOT_RUN; license unresolved |
+| [philipplackner/MultiModuleGradleManagement](https://github.com/philipplackner/MultiModuleGradleManagement) | Multi-module Gradle and build configuration reference. | Build NOT_RUN; license unresolved |
+| [philipplackner/KotlinFlowsGuide](https://github.com/philipplackner/KotlinFlowsGuide) | Flow/ViewModel example with dispatcher and test sources. | Build NOT_RUN; license unresolved |
+| [philipplackner/WorkManagerGuide](https://github.com/philipplackner/WorkManagerGuide) | Background download and filtering workers; never use automatic retries to resend payments. | Build NOT_RUN; license unresolved |
+| [philipplackner/AndroidCrypto](https://github.com/philipplackner/AndroidCrypto) | CryptoManager and settings serialization study; not a wallet custody design. | Build NOT_RUN; license unresolved |
+| [philipplackner/BiometricAuth](https://github.com/philipplackner/BiometricAuth) | BiometricPromptManager example; biometric success is not wallet authorization. | Build NOT_RUN; license unresolved |
+
+List this learning workspace without fetching:
+
+```bash
+python3 scripts/fetch-workspace.py --profile kotlin-learning --list
+```
+
+Remove `--list` to fetch the 12 pinned references for inspection. This does not build or integrate them and does not grant a redistribution license.
 
 ## Official learning sources
 
