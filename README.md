@@ -4,7 +4,16 @@
 
 A curated list of tools, SDKs, frameworks and tutorials for building decentralized apps (dApps) with Kotlin — smart contracts, Web3 clients, wallets, IPFS, KMP/CMP targets, testing and starter-kit references.
 
-This repository is an agent-readable resource catalog and workspace bootstrap. It does not contain a finished full-stack app or certify upstream projects as production-ready. The previously assembled 200+ repository source archive is a separate artifact; it is not present in this GitHub checkout.
+This repository is an agent-readable resource catalog and workspace bootstrap with 19 pinned, license-verified upstream Git submodules. It does not contain a finished full-stack app or certify upstream projects as production-ready. The previously assembled 200+ repository source archive is a separate artifact; it is not present in this GitHub checkout.
+
+## Pull the licensed source workspace
+
+```bash
+git clone --recurse-submodules https://github.com/CodesbyFebin/awesome-kotlin-dapp.git
+cd awesome-kotlin-dapp
+```
+
+See [source workspace](docs/SOURCE-WORKSPACE.md) and [source manifest](catalog/source-submodules.json). Submodules preserve source history and licenses; they are not flattened copies or an integrated app. The other 18 resources remain catalog references only.
 
 ## Start with one prompt
 

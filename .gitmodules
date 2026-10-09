@@ -1,0 +1,75 @@
+[submodule "upstream/android/nowinandroid"]
+	path = upstream/android/nowinandroid
+	url = https://github.com/android/nowinandroid.git
+
+[submodule "upstream/topjohnwu/Magisk"]
+	path = upstream/topjohnwu/Magisk
+	url = https://github.com/topjohnwu/Magisk.git
+
+[submodule "upstream/RikkaApps/Shizuku"]
+	path = upstream/RikkaApps/Shizuku
+	url = https://github.com/RikkaApps/Shizuku.git
+
+[submodule "upstream/google-ai-edge/gallery"]
+	path = upstream/google-ai-edge/gallery
+	url = https://github.com/google-ai-edge/gallery.git
+
+[submodule "upstream/komi-store/komi-store"]
+	path = upstream/komi-store/komi-store
+	url = https://github.com/komi-store/komi-store.git
+
+[submodule "upstream/Kotlin/kotlinx.coroutines"]
+	path = upstream/Kotlin/kotlinx.coroutines
+	url = https://github.com/Kotlin/kotlinx.coroutines.git
+
+[submodule "upstream/Heapy/awesome-kotlin"]
+	path = upstream/Heapy/awesome-kotlin
+	url = https://github.com/Heapy/awesome-kotlin.git
+
+[submodule "upstream/Kotlin/kotlinx.serialization"]
+	path = upstream/Kotlin/kotlinx.serialization
+	url = https://github.com/Kotlin/kotlinx.serialization.git
+
+[submodule "upstream/JetBrains/compose-multiplatform"]
+	path = upstream/JetBrains/compose-multiplatform
+	url = https://github.com/JetBrains/compose-multiplatform.git
+
+[submodule "upstream/solana-mobile/mobile-wallet-adapter"]
+	path = upstream/solana-mobile/mobile-wallet-adapter
+	url = https://github.com/solana-mobile/mobile-wallet-adapter.git
+
+[submodule "upstream/solana-mobile/mock-mwa-wallet"]
+	path = upstream/solana-mobile/mock-mwa-wallet
+	url = https://github.com/solana-mobile/mock-mwa-wallet.git
+
+[submodule "upstream/solana-mobile/web3-core"]
+	path = upstream/solana-mobile/web3-core
+	url = https://github.com/solana-mobile/web3-core.git
+
+[submodule "upstream/solana-mobile/rpc-core"]
+	path = upstream/solana-mobile/rpc-core
+	url = https://github.com/solana-mobile/rpc-core.git
+
+[submodule "upstream/solana-mobile/solana-mobile-skills"]
+	path = upstream/solana-mobile/solana-mobile-skills
+	url = https://github.com/solana-mobile/solana-mobile-skills.git
+
+[submodule "upstream/sol4k/sol4k"]
+	path = upstream/sol4k/sol4k
+	url = https://github.com/sol4k/sol4k.git
+
+[submodule "upstream/neow3j/neow3j"]
+	path = upstream/neow3j/neow3j
+	url = https://github.com/neow3j/neow3j.git
+
+[submodule "upstream/corda/corda"]
+	path = upstream/corda/corda
+	url = https://github.com/corda/corda.git
+
+[submodule "upstream/ktorio/ktor"]
+	path = upstream/ktorio/ktor
+	url = https://github.com/ktorio/ktor.git
+
+[submodule "upstream/google-developer-training/basic-android-kotlin-compose-training-unscramble"]
+	path = upstream/google-developer-training/basic-android-kotlin-compose-training-unscramble
+	url = https://github.com/google-developer-training/basic-android-kotlin-compose-training-unscramble.git

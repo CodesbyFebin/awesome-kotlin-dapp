@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-09",
+  "method": "git_submodules",
+  "repositories": [
+    {
+      "repository": "android/nowinandroid",
+      "path": "upstream/android/nowinandroid",
+      "url": "https://github.com/android/nowinandroid.git",
+      "commit": "a49ed253d75e61a2b6ab80a8da677b57437b08eb",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    {
+      "repository": "topjohnwu/Magisk",
+      "path": "upstream/topjohnwu/Magisk",
+      "url": "https://github.com/topjohnwu/Magisk.git",
+      "commit": "e8915d9db15f5aae93973ffe65068e34df375a6a",
+      "license": "GPL-3.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "9cecc1d4669ee8af2ca727a5d8cde10cd8b2d7cc"
+    },
+    {
+      "repository": "RikkaApps/Shizuku",
+      "path": "upstream/RikkaApps/Shizuku",
+      "url": "https://github.com/RikkaApps/Shizuku.git",
+      "commit": "b844bc491f1790c72328e1a8e5b2349f8978f0ea",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+    },
+    {
+      "repository": "google-ai-edge/gallery",
+      "path": "upstream/google-ai-edge/gallery",
+      "url": "https://github.com/google-ai-edge/gallery.git",
+      "commit": "a8e795660ee5c02b983897553c7844c351c77bda",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "repository": "komi-store/komi-store",
+      "path": "upstream/komi-store/komi-store",
+      "url": "https://github.com/komi-store/komi-store.git",
+      "commit": "3351dd8d5eb417326b740aa19804c6333bd4027d",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "repository": "Kotlin/kotlinx.coroutines",
+      "path": "upstream/Kotlin/kotlinx.coroutines",
+      "url": "https://github.com/Kotlin/kotlinx.coroutines.git",
+      "commit": "bd2e9a1b90400fb7b2fa4f8731e7d8148799ab73",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE.txt",
+      "license_blob_sha": "9c308d958bf91eafe83f66106ca692ff414a4965"
+    },
+    {
+      "repository": "Heapy/awesome-kotlin",
+      "path": "upstream/Heapy/awesome-kotlin",
+      "url": "https://github.com/Heapy/awesome-kotlin.git",
+      "commit": "04ca3c74cc909eefb019c4bb0084724ebb7eeab2",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "8dada3edaf50dbc082c9a125058f25def75e625a"
+    },
+    {
+      "repository": "Kotlin/kotlinx.serialization",
+      "path": "upstream/Kotlin/kotlinx.serialization",
+      "url": "https://github.com/Kotlin/kotlinx.serialization.git",
+      "commit": "3a5db3bc916fd3b0f70f932c23cd543a61840956",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE.txt",
+      "license_blob_sha": "9c8f3ea0871e0bfe81da0fa6e7c1d7d156dc380e"
+    },
+    {
+      "repository": "JetBrains/compose-multiplatform",
+      "path": "upstream/JetBrains/compose-multiplatform",
+      "url": "https://github.com/JetBrains/compose-multiplatform.git",
+      "commit": "8ed33df5892ee46cced39961d30efdc189d820cc",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE.txt",
+      "license_blob_sha": "244380c242e0f0f3545082a425eb43990addbd5f"
+    },
+    {
+      "repository": "solana-mobile/mobile-wallet-adapter",
+      "path": "upstream/solana-mobile/mobile-wallet-adapter",
+      "url": "https://github.com/solana-mobile/mobile-wallet-adapter.git",
+      "commit": "100e023048b7ffd3a67af2bf334f4bda3b9d8d7c",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "f41e596da325291d7cf10d348a0a338c693c0775"
+    },
+    {
+      "repository": "solana-mobile/mock-mwa-wallet",
+      "path": "upstream/solana-mobile/mock-mwa-wallet",
+      "url": "https://github.com/solana-mobile/mock-mwa-wallet.git",
+      "commit": "d444aff0c72dadd0f5c442ea2bc3559b62916e01",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "repository": "solana-mobile/web3-core",
+      "path": "upstream/solana-mobile/web3-core",
+      "url": "https://github.com/solana-mobile/web3-core.git",
+      "commit": "8fa2a35ec8a928adcf7ddd969b68150655c24789",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "cb991e4e2b697279d210d59253280c5135a09a68"
+    },
+    {
+      "repository": "solana-mobile/rpc-core",
+      "path": "upstream/solana-mobile/rpc-core",
+      "url": "https://github.com/solana-mobile/rpc-core.git",
+      "commit": "993d44717c38e06dc4a3dae7c91edaa0920f193f",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "cb991e4e2b697279d210d59253280c5135a09a68"
+    },
+    {
+      "repository": "solana-mobile/solana-mobile-skills",
+      "path": "upstream/solana-mobile/solana-mobile-skills",
+      "url": "https://github.com/solana-mobile/solana-mobile-skills.git",
+      "commit": "3a5ca04834ecfba64f2171805a7c20015255fdb6",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "29c9becae46882ff99a27fc52fe81e3f2a91f25e"
+    },
+    {
+      "repository": "sol4k/sol4k",
+      "path": "upstream/sol4k/sol4k",
+      "url": "https://github.com/sol4k/sol4k.git",
+      "commit": "a166edd854a7198553fdafe9a5051a400d70b121",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "fa4ee6e1f4fa933ca43765e5527d9b002f832b2c"
+    },
+    {
+      "repository": "neow3j/neow3j",
+      "path": "upstream/neow3j/neow3j",
+      "url": "https://github.com/neow3j/neow3j.git",
+      "commit": "30e809753c0014d399628b91f0ea945b5a5e9566",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "74fcbfb5c780726d1927c472f60bb2da5a3f12ea"
+    },
+    {
+      "repository": "corda/corda",
+      "path": "upstream/corda/corda",
+      "url": "https://github.com/corda/corda.git",
+      "commit": "8f06f532f94c9b18d036b9d81928abfa8772a435",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "dd5b3a58aa1849f452abc9b5cd1638dc71a5e482"
+    },
+    {
+      "repository": "ktorio/ktor",
+      "path": "upstream/ktorio/ktor",
+      "url": "https://github.com/ktorio/ktor.git",
+      "commit": "4717dd5fe8270a40fc97ba0b03bb63f722717786",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "68663eb9512df8d5bf99b73177d0ab65ddb2014f"
+    },
+    {
+      "repository": "google-developer-training/basic-android-kotlin-compose-training-unscramble",
+      "path": "upstream/google-developer-training/basic-android-kotlin-compose-training-unscramble",
+      "url": "https://github.com/google-developer-training/basic-android-kotlin-compose-training-unscramble.git",
+      "commit": "68dd95b0d6efe35aac30592984781e30e0b363cf",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "4c9ad980682246bd6ab0d2bae82232be6dbdcbd4"
+    }
+  ],
+  "reference_only": [
+    "android/android-ktx",
+    "android/kotlin-guides",
+    "shadowsocks/shadowsocks-android",
+    "LFDT-web3j/web3j",
+    "Kr1ptal/ethers-kt",
+    "ipfs/kubo",
+    "philipplackner/CleanArchitectureNoteApp",
+    "philipplackner/CMP-Bookpedia",
+    "philipplackner/CMP-Ktor",
+    "philipplackner/KtorJwtAuth",
+    "philipplackner/JWTAuthKtorAndroid",
+    "philipplackner/ShoppingListTestingYT",
+    "philipplackner/TestingCourse",
+    "philipplackner/MultiModuleGradleManagement",
+    "philipplackner/KotlinFlowsGuide",
+    "philipplackner/WorkManagerGuide",
+    "philipplackner/AndroidCrypto",
+    "philipplackner/BiometricAuth"
+  ]
+}

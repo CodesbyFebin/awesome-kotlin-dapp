@@ -14,3 +14,6 @@ Keep secrets, wallet seeds and private keys out of prompts, source and logs. Use
 
 ## Completion
 Run appropriate compile/test/lint checks and record command, UTC time, commit and exit status under evidence/. Keep Android, backend, agent and device suites separate. Runtime wallet, transfer, recovery and receipt checks remain NOT_RUN until actually exercised. Deployment and mainnet use require explicit scope. Never describe a generated starter or catalog as production-ready.
+
+## Licensed submodules
+Read catalog/source-submodules.json and docs/SOURCE-WORKSPACE.md. Use the pinned upstream/ submodules as source references. Do not flatten sources, delete license/notice files, claim upstream authorship or import unresolved-license references into a distributable app. A recursive clone is required; the parent ZIP omits submodule contents. Source checkout is not build qualification.
