@@ -1,0 +1,5 @@
+workspace/
+__pycache__/
+*.pyc
+.env
+local.properties

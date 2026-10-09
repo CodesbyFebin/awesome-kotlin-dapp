@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this catalog and credit individual upstream projects separately."
+title: "Awesome Kotlin dApp"
+type: software
+authors:
+  - family-names: "Francis"
+    given-names: "Febin"
+    alias: "CodesbyFebin"
+repository-code: "https://github.com/CodesbyFebin/awesome-kotlin-dapp"
+url: "https://github.com/CodesbyFebin/awesome-kotlin-dapp"

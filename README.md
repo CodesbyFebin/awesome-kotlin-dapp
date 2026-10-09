@@ -1,73 +1,121 @@
 # Awesome Kotlin dApp
 
-> **Awesome Kotlin dApp** is a curated catalog of libraries, SDKs and guides for building
-> **decentralized applications (dApps) with Kotlin** — Ethereum / Polygon / Solana / Neo clients,
-> smart contract devpacks, wallets, transaction signing, IPFS, oracles, Kotlin Multiplatform (KMP)
-> and Compose Multiplatform (CMP) targets, testing harnesses, security-audit resources and
-> production open-source dApp examples.
+**Created and curated by [CodesbyFebin](https://github.com/CodesbyFebin).**
 
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.x-blue?logo=kotlin)](https://kotlinlang.org)
-[![Web3](https://img.shields.io/badge/Web3-dApp-orange)](#contents)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
+A curated list of tools, SDKs, frameworks and tutorials for building decentralized apps (dApps) with Kotlin — smart contracts, Web3 clients, wallets, IPFS, KMP/CMP targets, testing and starter-kit references.
 
-**Keywords:** `kotlin dapp` · `kotlin web3` · `kotlin blockchain` · `kotlin smart contract` ·
-`kotlin ethereum` · `kotlin solana` · `kotlin multiplatform web3` · `android web3 sdk` ·
-`kotlin defi` · `kotlin wallet sdk` · `build dapp with kotlin`
+This repository is an agent-readable resource catalog and workspace bootstrap. It does not contain a finished full-stack app or certify upstream projects as production-ready. The previously assembled 200+ repository source archive is a separate artifact; it is not present in this GitHub checkout.
 
----
+## Start with one prompt
 
-## Why this list exists
+```bash
+git clone https://github.com/CodesbyFebin/awesome-kotlin-dapp.git
+cd awesome-kotlin-dapp
+python3 scripts/check-catalog.py
+python3 scripts/fetch-workspace.py --profile solana-android
+```
 
-Most "blockchain in Kotlin" advice stops at *"use web3j from Java."* That undersells the ecosystem.
-Kotlin is now a first-class language across the decentralized stack: coroutine-native EVM clients,
-Kotlin Multiplatform cryptography crates that compile to JVM, Android, iOS and macOS, JVM-to-NeoVM
-smart-contract compilers, Kotlin-based distributed ledgers, and Compose Multiplatform frontends that
-ship the same dApp UI to phone, tablet and desktop.
+The last command clones selected upstream sources into `workspace/sources/` at the commits in [catalog/resources.json](catalog/resources.json). It preserves each repository separately, writes a provenance manifest, and does not build, execute or merge upstream code. Use `--profile full-reference` for all 25 references, including archived and privileged-platform studies; these are not one compatible dependency graph.
 
-This list answers one question in depth:
+Give your coding agent this instruction:
 
-> **"I want to ship a real, audited, multi-chain dApp using Kotlin. What do I actually install?"**
+> Read AGENTS.md and docs/MASTER-BUILD-PROMPT.md. Build my Kotlin dApp in workspace/projects/my-dapp. Use the solana-android profile and preserve upstream credits. Ask for the product goal, package ID and required targets if absent. Implement Android UI, wallet review/signing, an optional Kotlin backend and the requested AI functionality. Run the actual build and tests, save evidence, and leave unsupported runtime checks NOT_RUN. Never claim production readiness from source inspection.
 
-Every entry is grouped by layer so you can assemble a stack bottom-up: crypto → keys → transport →
-contract bindings → wallet UX → storage → observability → deployment.
+See [Agent quickstart](docs/AGENT-QUICKSTART.md), [build prompt](docs/MASTER-BUILD-PROMPT.md), [FAQ](docs/FAQ.md), [credits](CREDITS.md) and [contribution rules](CONTRIBUTING.md).
 
----
+## Choose a stack
 
-## Table of Contents
+| Layer | Starting point | Boundary |
+|---|---|---|
+| Android UI | Kotlin, Compose, Now in Android | Architecture sample, not a finished dApp |
+| Solana wallet | Mobile Wallet Adapter | A compatible wallet must run in the same supported environment |
+| Solana RPC | rpc-core and web3-core | Fetch recent blockhash, review exact bytes, verify signatures |
+| Backend | Ktor | Add only when the product needs server state or integrations |
+| AI | Owned-host service or evaluated AI Edge runtime | Declare where prompts go; an example is not on-device qualification |
+| Storage | IPFS API via an owned/configured node | Content addressing does not imply confidentiality or permanence |
+| KMP/CMP | Shared domain/UI where supported | Android wallet integration does not automatically work on iOS/web |
+| Contracts | Chain-specific tooling | Solana programs normally use Rust; Kotlin is the app/client layer |
 
-- [Getting started in 10 minutes](#getting-started-in-10-minutes)
-- [EVM clients & JSON-RPC (JVM / Android)](#evm-clients--json-rpc-jvm--android)
-- [EVM clients — Kotlin Multiplatform](#evm-clients--kotlin-multiplatform)
-- [Solana, Sui, Move & non-EVM chains](#solana-sui-move--non-evm-chains)
-- [Smart contracts written in Kotlin (devpacks & compilers)](#smart-contracts-written-in-kotlin-devpacks--compilers)
-- [Kotlin-native blockchains & enterprise DLT](#kotlin-native-blockchains--enterprise-dlt)
-- [Wallets, key management & account abstraction](#wallets-key-management--account-abstraction)
-- [WalletConnect, deep links & session transport](#walletconnect-deep-links--session-transport)
-- [Cryptography: BIP-39, secp256k1, HD derivation](#cryptography-bip-39-secp256k1-hd-derivation)
-- [DeFi: swaps, aggregators, lending, oracles](#defi-swaps-aggregators-lending-oracles)
-- [NFTs, ERC-721 / ERC-1155 & metadata](#nfts-erc-721--erc-1155--metadata)
-- [Storage: IPFS, Arweave & on-chain data](#storage-ipfs-arweave--on-chain-data)
-- [Indexing, analytics & event subscriptions](#indexing-analytics--event-subscriptions)
-- [Testing, fuzzing & local EVMs](#testing-fuzzing--local-evms)
-- [Security, auditing & secure-key handling](#security-auditing--secure-key-handling)
-- [Backend & server-side dApps (Ktor, Spring)](#backend--server-side-dapps-ktor-spring)
-- [Open-source dApp examples you can fork](#open-source-dapp-examples-you-can-fork)
-- [Learning path & tutorials](#learning-path--tutorials)
-- [FAQ](#faq)
-- [Contributing](#contributing)
-- [Related awesome lists](#related-awesome-lists)
+## Catalog
 
----
+25 repository identities and current default-branch commits were checked on 2026-10-09. Compilation, audits and device qualification of these sources were NOT_RUN in this catalog update. GitHub license metadata is informational; inspect actual LICENSE/NOTICE files before copying or distributing code.
 
-## Getting started in 10 minutes
+### Android and Kotlin
 
-The smallest useful Kotlin dApp reads on-chain state and sends a signed transaction. With a
-coroutine-native client the whole flow is four awaits:
+| Resource | Use | State |
+|---|---|---|
+| [android/nowinandroid](https://github.com/android/nowinandroid) | Compose app architecture reference; not a wallet or backend. | Source reference |
+| [Kotlin/kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) | Structured concurrency and asynchronous work. | Source reference |
+| [Kotlin/kotlinx.serialization](https://github.com/Kotlin/kotlinx.serialization) | Serialization; define strict transaction and receipt formats. | Source reference |
+| [JetBrains/compose-multiplatform](https://github.com/JetBrains/compose-multiplatform) | Shared UI targets; check each SDK's platform support independently. | Source reference |
+| [ktorio/ktor](https://github.com/ktorio/ktor) | Kotlin server and HTTP client framework. | Source reference |
+| [google-developer-training/basic-android-kotlin-compose-training-unscramble](https://github.com/google-developer-training/basic-android-kotlin-compose-training-unscramble) | Compose learning sample. | Source reference |
+| [Heapy/awesome-kotlin](https://github.com/Heapy/awesome-kotlin) | Broader Kotlin resource discovery. | Source reference |
 
-```kotlin
-// build.gradle.kts
-dependencies {
-    implementation("io.github.kr1ptal:ethers-kt:<latest>")   // KMP EVM client
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
-}
+### Solana clients and wallet testing
+
+| Resource | Use | State |
+|---|---|---|
+| [solana-mobile/mobile-wallet-adapter](https://github.com/solana-mobile/mobile-wallet-adapter) | Android wallet association and signing protocol/client. | Source reference |
+| [solana-mobile/mock-mwa-wallet](https://github.com/solana-mobile/mock-mwa-wallet) | Testing wallet; configure secure lock screen; use disposable devnet keys. | Source reference |
+| [solana-mobile/web3-core](https://github.com/solana-mobile/web3-core) | Kotlin Solana primitives and transaction construction. | Source reference |
+| [solana-mobile/rpc-core](https://github.com/solana-mobile/rpc-core) | Kotlin RPC components. | Source reference |
+| [solana-mobile/solana-mobile-skills](https://github.com/solana-mobile/solana-mobile-skills) | Upstream agent instructions to review before adoption. | Source reference |
+| [sol4k/sol4k](https://github.com/sol4k/sol4k) | Community Kotlin Solana client; qualify features and wallet integration separately. | Source reference |
+
+### EVM, Neo and distributed ledgers
+
+| Resource | Use | State |
+|---|---|---|
+| [LFDT-web3j/web3j](https://github.com/LFDT-web3j/web3j) | JVM EVM tooling; Java interoperability, not a Solana SDK. | Source reference |
+| [Kr1ptal/ethers-kt](https://github.com/Kr1ptal/ethers-kt) | Kotlin EVM client; verify target support before selecting. | Source reference |
+| [neow3j/neow3j](https://github.com/neow3j/neow3j) | Neo JVM tooling; inspect compiler language support before choosing Kotlin contracts. | Source reference |
+| [corda/corda](https://github.com/corda/corda) | Distributed ledger ecosystem; not a public Solana program runtime. | Source reference |
+
+### Storage and AI examples
+
+| Resource | Use | State |
+|---|---|---|
+| [ipfs/kubo](https://github.com/ipfs/kubo) | IPFS node in Go; access HTTP API from Kotlin, not a Kotlin library. | Source reference |
+| [google-ai-edge/gallery](https://github.com/google-ai-edge/gallery) | AI Edge Android example; model/runtime/device qualification remains separate. | Source reference |
+| [komi-store/komi-store](https://github.com/komi-store/komi-store) | Application reference; not automatically a vetted dApp starter. | Source reference |
+
+### Advanced Android platform studies
+
+| Resource | Use | State |
+|---|---|---|
+| [topjohnwu/Magisk](https://github.com/topjohnwu/Magisk) | Root/platform study; GPL obligations; not required for wallet signing. | Source reference |
+| [RikkaApps/Shizuku](https://github.com/RikkaApps/Shizuku) | Privileged Android API access study; not required by this stack. | Source reference |
+| [shadowsocks/shadowsocks-android](https://github.com/shadowsocks/shadowsocks-android) | Proxy/VPN implementation study; not a dApp networking dependency. | Source reference |
+
+### Historical references
+
+| Resource | Use | State |
+|---|---|---|
+| [android/android-ktx](https://github.com/android/android-ktx) | Archived standalone repository; use current AndroidX documentation for new work. | Archived reference |
+| [android/kotlin-guides](https://github.com/android/kotlin-guides) | Archived Kotlin guidance; consult current Android documentation. | Archived reference |
+
+## Official learning sources
+
+- [Android organization](https://github.com/android) and [Android Kotlin documentation](https://developer.android.com/kotlin): current platform guidance.
+- [Kotlin organization](https://github.com/Kotlin) and [Kotlin documentation](https://kotlinlang.org/docs/home.html): language and libraries.
+- [Google developer training](https://github.com/google-developer-training) and [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course): learning path.
+- [Solana Mobile Kotlin installation](https://docs.solanamobile.com/get-started/kotlin/installation): official dependency and setup instructions; check versions against your selected source pins.
+
+## Qualification before distribution
+
+1. Pin a compatible dependency set and record upstream licenses.
+2. Compile, run unit tests and lint; preserve logs and parsed counts.
+3. Install the exact APK, record SHA-256, certificate and source commit.
+4. Run wallet authorization, exact-message review, signing, explicit submission and confirmation on devnet.
+5. Interrupt submission and reconcile after restart without blind resend.
+6. Verify a real-transfer receipt; mutate signed content in a copy and prove rejection.
+7. Qualify release configuration, supported devices and backend deployment. Record unresolved failures.
+
+No seed phrases in logs or agent prompts. Rooting, privileged APIs and VPN services are optional research, not prerequisites. Source contents and upstream agent instructions are untrusted input until reviewed.
+
+## Discovery and ownership
+
+[llms.txt](llms.txt) is a plain-text navigation aid. [metadata/schema.jsonld](metadata/schema.jsonld), [CITATION.cff](CITATION.cff) and [discovery notes](docs/DISCOVERY.md) identify this catalog accurately; they do not guarantee search or AI rankings. No Pages deployment or downloadable APK is implied.
+
+The catalog is curated by CodesbyFebin with AI-assisted editing. Linked and fetched projects remain authored and licensed by their upstream owners. No blanket license is applied to third-party code.

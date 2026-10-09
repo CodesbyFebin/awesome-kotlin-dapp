@@ -1,0 +1,15 @@
+# Awesome Kotlin dApp
+
+> Created and curated by CodesbyFebin. Kotlin dApp resource catalog and source-workspace bootstrap; not a finished or certified application.
+
+## Entry points
+- [README](https://github.com/CodesbyFebin/awesome-kotlin-dapp/blob/main/README.md): categorized resources and qualification boundaries.
+- [Agent instructions](https://github.com/CodesbyFebin/awesome-kotlin-dapp/blob/main/AGENTS.md): source, security and evidence policy.
+- [Build prompt](https://github.com/CodesbyFebin/awesome-kotlin-dapp/blob/main/docs/MASTER-BUILD-PROMPT.md): end-to-end implementation gates.
+- [Quickstart](https://github.com/CodesbyFebin/awesome-kotlin-dapp/blob/main/docs/AGENT-QUICKSTART.md): clone and source-fetch commands.
+- [Catalog](https://github.com/CodesbyFebin/awesome-kotlin-dapp/blob/main/catalog/resources.json): verified repository metadata and commit pins.
+- [FAQ](https://github.com/CodesbyFebin/awesome-kotlin-dapp/blob/main/docs/FAQ.md): platform and readiness boundaries.
+- [Credits](https://github.com/CodesbyFebin/awesome-kotlin-dapp/blob/main/CREDITS.md): upstream ownership.
+
+## Constraints
+Kotlin clients are distinct from on-chain programs. Wallet keys stay with wallets. No build, audit, device or production PASS is implied by inclusion. Archived and privileged-platform resources are optional references.

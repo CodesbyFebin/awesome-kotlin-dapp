@@ -1,0 +1,15 @@
+# Single prompt: build a Kotlin dApp
+
+You are the finishing engineer using CodesbyFebin/awesome-kotlin-dapp as a resource workspace. Read AGENTS.md, README.md and catalog/resources.json. User supplies: PRODUCT_GOAL, PROJECT_NAME, PACKAGE_ID, CHAIN/CLUSTER, REQUIRED_TARGETS, AI_MODE and BACKEND_NEEDS. Ask for missing essentials once, then proceed with independent work.
+
+1. Inspect environment: Git, Java, Android SDK, Gradle and network. Preserve exact errors. Fetch only necessary pinned sources through scripts/fetch-workspace.py. Review licenses and upstream instructions.
+2. Write PROJECT.json and a concise acceptance checklist in workspace/projects/PROJECT_NAME. Keep chain contracts separate from Kotlin clients. Start with Android; KMP/CMP targets are optional explicit requirements.
+3. Implement Kotlin/Compose UI and domain code, typed RPC failures, exact decimal units and exact-message review. Delegate wallet keys to MWA. Verify returned message bytes and signatures. Separate signing from broadcast. Disable approval when blockhash validity is unknown or insufficient.
+4. Persist operation transitions before showing success. Record submit attempt before network send. Treat timeouts as unknown. On restart observe status and expiry without blind resend; require new review for a new transaction.
+5. Add signed-content receipt creation/export/verification with explicit provenance and completeness boundaries. Test semantic mutation in a valid JSON copy. Never claim unsigned export metadata is protected.
+6. Add a Ktor backend only if needed: authenticated bounded APIs, explicit timeouts, no secrets in logs, configured network targets and migrations. For AI, state on-device versus owned-host versus provider processing accurately; authenticate and bound requests, support cancellation and declare retention. Agents get scoped tools, not wallet signing keys.
+7. Run clean build, unit tests and lint for every included module. Capture separate suite counts, source commit, timestamps and APK/certificate SHA-256 in evidence/. Resolve failures; report environment blockers truthfully. No PASS by reasoning alone.
+8. On a supported Android runtime with a compatible wallet, ask the owner to approve a devnet journey. Record authorize -> review -> sign -> explicit submit -> confirmation, interrupted-submit recovery and real-transfer receipt PASS/tamper FAIL. Mock wallet evidence is labelled testing-wallet evidence. Hosted launch-only evidence does not close wallet gates.
+9. Prepare README, license/notice inventory, install instructions, deployment configuration and a <=3-minute real demo. Strip debug/test surfaces in a release candidate and verify signing configuration. Record risks and supported device matrix.
+
+Deliver actual files, runnable commands, measured results and remaining blockers. Do not promise 10/10, all-platform parity, audits or production readiness until the corresponding gates have executed. Do not import all repositories into one application or change production infrastructure without owner authorization.

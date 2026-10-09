@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "Awesome Kotlin dApp",
+  "description": "Curated Kotlin dApp tools, SDKs, frameworks, tutorials and agent workspace bootstrap.",
+  "codeRepository": "https://github.com/CodesbyFebin/awesome-kotlin-dapp",
+  "url": "https://github.com/CodesbyFebin/awesome-kotlin-dapp",
+  "author": {
+    "@type": "Person",
+    "name": "Febin Francis",
+    "alternateName": "CodesbyFebin",
+    "url": "https://github.com/CodesbyFebin"
+  },
+  "programmingLanguage": [
+    "Python",
+    "Kotlin"
+  ],
+  "keywords": [
+    "Kotlin",
+    "Android",
+    "Solana",
+    "Mobile Wallet Adapter",
+    "Ktor",
+    "Compose Multiplatform",
+    "dApp"
+  ],
+  "isAccessibleForFree": true
+}
