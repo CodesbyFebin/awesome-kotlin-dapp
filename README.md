@@ -1,3 +1,5 @@
+<img width="2172" height="724" alt="image" src="https://github.com/user-attachments/assets/552352ac-087b-487b-a33d-03c8c3115108" />
+
 # Awesome Kotlin dApp
 
 **Created and curated by [CodesbyFebin](https://github.com/CodesbyFebin).**
