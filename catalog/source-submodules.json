@@ -182,6 +182,42 @@
       "license": "MIT OR Apache-2.0",
       "license_path": "LICENSE-APACHE",
       "license_blob_sha": "72edcf074d56ea1524528e64bfbb78622bf34eac"
+    },
+    {
+      "repository": "roozbehzarei/filester",
+      "path": "upstream/roozbehzarei/filester",
+      "url": "https://github.com/roozbehzarei/filester.git",
+      "commit": "f07acd0543f3157dee0ac48437642f0efcb006be",
+      "license": "GPL-3.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+    },
+    {
+      "repository": "android/storage-samples",
+      "path": "upstream/android/storage-samples",
+      "url": "https://github.com/android/storage-samples.git",
+      "commit": "4aee388a401243a954300c677b91fa098a5daf4e",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "d3a882dfb0fe4fb66a633ce8d498e402900628ea"
+    },
+    {
+      "repository": "google/modernstorage",
+      "path": "upstream/google/modernstorage",
+      "url": "https://github.com/google/modernstorage.git",
+      "commit": "74ffdae8638bf36930dcda3ad650da8a8c868522",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "repository": "skalenetwork/filestorage.js",
+      "path": "upstream/skalenetwork/filestorage.js",
+      "url": "https://github.com/skalenetwork/filestorage.js.git",
+      "commit": "d429b3d70d39121a5104edffa1fbb41c33aab3aa",
+      "license": "LGPL-3.0",
+      "license_path": "LICENSE",
+      "license_blob_sha": "153d416dc8d2d60076698ec3cbfce34d91436a03"
     }
   ],
   "reference_only": [
@@ -203,6 +239,11 @@
     "philipplackner/WorkManagerGuide",
     "philipplackner/AndroidCrypto",
     "philipplackner/BiometricAuth",
-    "nickjvandyke/Sia-Android"
+    "nickjvandyke/Sia-Android",
+    "maidsafe/autonomi",
+    "NzddXD/LatihanKotlin",
+    "gdpbalt/cloud-file-storage",
+    "Kriptikz/ShadowDriveMobile",
+    "adamsyy/hox"
   ]
 }

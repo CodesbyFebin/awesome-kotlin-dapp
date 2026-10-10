@@ -6,7 +6,7 @@
 
 A curated list of tools, SDKs, frameworks and tutorials for building decentralized apps (dApps) with Kotlin — smart contracts, Web3 clients, wallets, IPFS, KMP/CMP targets, testing and starter-kit references.
 
-This repository is an agent-readable resource catalog and workspace bootstrap with 20 pinned, license-verified upstream Git submodules. It does not contain a finished full-stack app or certify upstream projects as production-ready. The previously assembled 200+ repository source archive is a separate artifact; it is not present in this GitHub checkout.
+This repository is an agent-readable resource catalog and workspace bootstrap with 24 pinned, license-verified upstream Git submodules. It does not contain a finished full-stack app or certify upstream projects as production-ready. The previously assembled 200+ repository source archive is a separate artifact; it is not present in this GitHub checkout.
 
 ## Pull the licensed source workspace
 
@@ -15,7 +15,7 @@ git clone --recurse-submodules https://github.com/CodesbyFebin/awesome-kotlin-da
 cd awesome-kotlin-dapp
 ```
 
-See [source workspace](docs/SOURCE-WORKSPACE.md) and [source manifest](catalog/source-submodules.json). Submodules preserve source history and licenses; they are not flattened copies or an integrated app. The other 19 resources remain catalog references only.
+See [source workspace](docs/SOURCE-WORKSPACE.md) and [source manifest](catalog/source-submodules.json). Submodules preserve source history and licenses; they are not flattened copies or an integrated app. The other 24 resources remain catalog references only.
 
 ## Start with one prompt
 
@@ -26,7 +26,7 @@ python3 scripts/check-catalog.py
 python3 scripts/fetch-workspace.py --profile solana-android
 ```
 
-The last command clones selected upstream sources into `workspace/sources/` at the commits in [catalog/resources.json](catalog/resources.json). It preserves each repository separately, writes a provenance manifest, and does not build, execute or merge upstream code. Use `--profile full-reference` for all 39 references, including archived and privileged-platform studies; these are not one compatible dependency graph.
+The last command clones selected upstream sources into `workspace/sources/` at the commits in [catalog/resources.json](catalog/resources.json). It preserves each repository separately, writes a provenance manifest, and does not build, execute or merge upstream code. Use `--profile full-reference` for all 48 references, including archived and privileged-platform studies; these are not one compatible dependency graph.
 
 Give your coding agent this instruction:
 
@@ -49,7 +49,7 @@ See [Agent quickstart](docs/AGENT-QUICKSTART.md), [build prompt](docs/MASTER-BUI
 
 ## Catalog
 
-39 repository identities and current default-branch commits were checked on 2026-10-09. Compilation, audits and device qualification of these sources were NOT_RUN in this catalog update. GitHub license metadata is informational; inspect actual LICENSE/NOTICE files before copying or distributing code.
+48 repository identities and current default-branch commits were checked on 2026-10-09. Compilation, audits and device qualification of these sources were NOT_RUN in this catalog update. GitHub license metadata is informational; inspect actual LICENSE/NOTICE files before copying or distributing code.
 
 ### Android and Kotlin
 
@@ -141,6 +141,23 @@ Remove `--list` to fetch the 12 pinned references for inspection. This does not 
 | [nickjvandyke/Sia-Android](https://github.com/nickjvandyke/Sia-Android) | Sia Android architecture reference | Author restricts redistribution/modification; source is not imported |
 
 Read [EdgeORE storage integration assessment](docs/EDGEORE-STORAGE.md). Existing EdgeORE local storage remains unchanged; no new storage functionality is claimed.
+
+
+### Storage providers and Android file handling
+
+| Resource | Role | Source status |
+|---|---|---|
+| [maidsafe/autonomi](https://github.com/maidsafe/autonomi) | Archived Rust network/client reference; upstream directs current development to WithAutonomi. Root license unresolved; no source import. | Reference only; build NOT_RUN |
+| [roozbehzarei/filester](https://github.com/roozbehzarei/filester) | Android temporary file-sharing app reference; GPL-3.0, not an owned IPFS backend or a verified privacy implementation. | Pinned licensed submodule; build NOT_RUN |
+| [NzddXD/LatihanKotlin](https://github.com/NzddXD/LatihanKotlin) | Kotlin practice exercises; not a demonstrated cloud-storage service; license unresolved. | Reference only; build NOT_RUN |
+| [gdpbalt/cloud-file-storage](https://github.com/gdpbalt/cloud-file-storage) | Kotlin cloud-file-storage project with Docker infrastructure; license and service security qualification unresolved. | Reference only; build NOT_RUN |
+| [Kriptikz/ShadowDriveMobile](https://github.com/Kriptikz/ShadowDriveMobile) | Kotlin Android Shadow Drive example; license unresolved; not a drop-in storage SDK. | Reference only; build NOT_RUN |
+| [android/storage-samples](https://github.com/android/storage-samples) | Archived/deprecated Android storage, SAF and FileProvider examples; consult current Android documentation. | Pinned licensed submodule; build NOT_RUN |
+| [google/modernstorage](https://github.com/google/modernstorage) | Archived Android storage abstraction experiment; historical reference, not a default dependency. | Pinned licensed submodule; build NOT_RUN |
+| [skalenetwork/filestorage.js](https://github.com/skalenetwork/filestorage.js) | JavaScript SKALE file-storage client; separate EVM chain and transport, not Kotlin/Solana/IPFS SDK. | Pinned licensed submodule; build NOT_RUN |
+| [adamsyy/hox](https://github.com/adamsyy/hox) | React/Solidity/Web3 hackathon storage prototype; not a Kotlin implementation; license unresolved. | Reference only; build NOT_RUN |
+
+These are separate alternatives and learning references, not one integrated storage stack. See [storage selection guide](docs/STORAGE-SELECTION.md).
 
 ## Official learning sources
 

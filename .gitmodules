@@ -77,3 +77,19 @@
 [submodule "upstream/WithAutonomi/self_encryption"]
 	path = upstream/WithAutonomi/self_encryption
 	url = https://github.com/WithAutonomi/self_encryption.git
+
+[submodule "upstream/roozbehzarei/filester"]
+	path = upstream/roozbehzarei/filester
+	url = https://github.com/roozbehzarei/filester.git
+
+[submodule "upstream/android/storage-samples"]
+	path = upstream/android/storage-samples
+	url = https://github.com/android/storage-samples.git
+
+[submodule "upstream/google/modernstorage"]
+	path = upstream/google/modernstorage
+	url = https://github.com/google/modernstorage.git
+
+[submodule "upstream/skalenetwork/filestorage.js"]
+	path = upstream/skalenetwork/filestorage.js
+	url = https://github.com/skalenetwork/filestorage.js.git
